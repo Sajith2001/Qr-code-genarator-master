@@ -1,0 +1,12 @@
+<h1>Genarate your QR</h1>
+<qrcode [width]="300"
+colorDark=""
+colorLight=""
+ (qrCodeURL)="onchange($event)" [qrdata]="qrdata"></qrcode>
+
+
+<input type="text" [(ngModel)]="qrdata"/>
+
+<br />
+
+<a [href]= "qrcodedownloadlink">Download</a>
